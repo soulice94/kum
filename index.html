@@ -7,19 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <h1>Pedro Arturo Flores Ramírez</h1>
+    <div class="container-fluid encabezado">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <h1 class="nombre text-center">Pedro Arturo</h1>
+                <h1 class="nombre text-center">Flores Ramírez</h1>
+            </div>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid acerca">
+        <div class="row justify-content-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-11">
+                <h2 class="titulo">Acerca de Mi</h2>
+            </div>
+                <!-- <div class="etiqueta">
+                    <div class="borde_izq"></div>
+                    <div class="centro text-center">ACERCA DE MI</div>
+                    <div class="borde_der"></div>
+                </div>
+                <div style="clear: left;"></div> -->
+            <div class="col-sm-3">
+                <img class="img-fluid" src="img/user.jpeg">
+            </div>
+            <div class="col-sm-6">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita porro doloribus alias adipisci recusandae minus odio sit nemo saepe, aspernatur inventore, excepturi temporibus similique vero culpa minima odit, eligendi officia
             </div>
         </div>
     </div>
+    <div class="container-fluid habilidades">
+        <div class="row justify-content-center" id="cajon_tarjetas">
+            <div class="col-12">
+                <h2 class="titulo text-center">Habilidades</h2>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-12 show-info" id="show-info1">
+                <h1>Angular</h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <pre class="prettyprint linenums">
+class Voila {
+    public:
+    // Voila
+    static const string VOILA = "Voila";
     
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+}                       </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-6 col-sm-2">
+                <div class="tarjeta">
+                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <div class="col-12 tarjeta show-info" id="show-info2"></div>
+        </div>
+    </div>
 </body>
 </html>

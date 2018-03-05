@@ -1,0 +1,68 @@
+body{
+    background: white;
+}
+h1.nombre{
+    color: #673AB7;
+    font-size: 4rem;
+}
+div.flechas{
+    background: orange;
+    border-top: 300px solid transparent;
+    /*border-bottom: 60px solid transparent;*/
+    border-left: 60px solid yellow;
+    border-right: 60px solid purple;
+}
+div.etiqueta{
+    position: relative;
+}
+div.borde_izq{
+    border-style: solid;
+    border-width: 0 0 3vh 3vh;
+    border-color: transparent transparent #5F40B0 transparent;
+    width: 10%;
+    float: left;
+}
+div.centro{
+    background: #5F40B0;
+    float: left;
+    height: 3vh;
+    color: white;
+    width: 80%;
+}
+div.borde_der{
+    border-style: solid;
+    border-width: 3vh 3vh 0 0;
+    border-color: #5F40B0 transparent transparent transparent;
+    float: left;
+    width: 10%;
+}
+hr{
+    background-color: #F06292;
+    height: 3px;
+}
+.encabezado{
+    background: #EEEEEE;
+}
+div.acerca{
+    background: #513F78;
+    color: white;
+}
+div.tarjeta{
+    background: white;
+    width: 100%;
+    margin-bottom: 30px;
+}
+h2.titulo{
+    color: white;
+    font-size: 2.5rem;
+}
+div.habilidades{
+    background: #EC407A;
+}
+.show-info{
+    display: none;
+    height: 500px;
+    background: white;
+    width: 100%;
+    margin-bottom: 30px;
+}
