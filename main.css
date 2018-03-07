@@ -57,12 +57,22 @@ h2.titulo{
     font-size: 2.5rem;
 }
 div.habilidades{
-    background: #EC407A;
+    background: white;
 }
 .show-info{
     display: none;
-    height: 500px;
+    height: 400px;
     background: white;
     width: 100%;
     margin-bottom: 30px;
+}
+p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+div.bg-black{
+    background: black;
+}
+#codigo{
+    font-size: 1.0rem;
 }

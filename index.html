@@ -11,12 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
     <div class="container-fluid encabezado">
         <div class="row justify-content-center">
-            <div class="col-sm-8">
+            <div class="col-sm-8" id="nombre">
                 <h1 class="nombre text-center">Pedro Arturo</h1>
                 <h1 class="nombre text-center">Flores Ramírez</h1>
             </div>
@@ -37,10 +38,9 @@
         </ul>
     </div>
     <div class="container-fluid acerca">
-        <div class="row justify-content-center">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-11">
-                <h2 class="titulo">Acerca de Mi</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h2 class="titulo mt-4 ml-4 mb-4">Acerca de Mi</h2>
             </div>
                 <!-- <div class="etiqueta">
                     <div class="borde_izq"></div>
@@ -48,77 +48,67 @@
                     <div class="borde_der"></div>
                 </div>
                 <div style="clear: left;"></div> -->
-            <div class="col-sm-3">
-                <img class="img-fluid" src="img/user.jpeg">
+            <div class="col-md-3">
+                <img class="img-fluid mb-5 rounded-circle" src="img/user.jpeg">
             </div>
-            <div class="col-sm-6">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita porro doloribus alias adipisci recusandae minus odio sit nemo saepe, aspernatur inventore, excepturi temporibus similique vero culpa minima odit, eligendi officia
+            <div class="col-md-6">
+                <p class="mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel felis lectus. Nullam porttitor volutpat placerat. 
+                    Sed scelerisque consectetur erat, ac elementum turpis interdum ut. Aliquam sed libero ipsum. Nunc odio est, blandit 
+                    et lorem ac, porttitor feugiat nisl. Maecenas sodales, nisl tristique dictum imperdiet, quam metus eleifend mi, ac 
+                    pharetra sem lacus volutpat odio. Donec nisl dui, commodo in facilisis in, lobortis sit amet nunc. Morbi lacus augue, 
+                    blandit a venenatis dignissim, commodo sit amet felis. Mauris vulputate massa nec nisi malesuada imperdiet. Vivamus at 
+                    scelerisque turpis, et blandit tellus. Donec lorem nisl, finibus vitae erat sed, congue accumsan tortor.
+                </p>
             </div>
         </div>
     </div>
     <div class="container-fluid habilidades">
-        <div class="row justify-content-center" id="cajon_tarjetas">
+        <div class="row justify-content-center align-items-center" id="cajon_tarjetas">
             <div class="col-12">
-                <h2 class="titulo text-center">Habilidades</h2>
+                <h2 class="titulo text-center mt-4" style="color:black">Habilidades</h2>
             </div>
-            <div class="col-6 col-sm-2">
+            <div class="col-6 col-sm-3 col-md-2" id="t1">
                 <div class="tarjeta">
                     <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-2">
+            <div class="col-6 col-sm-3 col-md-2">
                 <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    <img src="img/technologies/LaravelLogo.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-2">
+            <div class="col-6 col-sm-3 col-md-2">
                 <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    <img src="img/technologies/bootstrap.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-2">
+            <div class="col-6 col-sm-3 col-md-2">
                 <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    <img src="img/technologies/node.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-2">
+            <div class="col-6 col-sm-3 col-md-2">
                 <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    <img src="img/technologies/php.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-2">
+            <div class="col-6 col-sm-3 col-md-2">
                 <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    <img src="img/technologies/jquery.gif" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
             <div class="col-12 show-info" id="show-info1">
                 <h1>Angular</h1>
                 <div class="row">
                     <div class="col-sm-6">
-                        <pre class="prettyprint linenums">
-class Voila {
-    public:
-    // Voila
-    static const string VOILA = "Voila";
-    
-    // will not interfere with embedded <a href="#voila2">tags</a>.
-}                       </pre>
+                        <p id="descripcion"></p>
                     </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-2">
-                <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
-            <div class="col-6 col-sm-2">
-                <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
-            <div class="col-6 col-sm-2">
-                <div class="tarjeta">
-                    <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    <div class="col-sm-6 bg-black">
+                        <pre class="prettyprint linenums" id="codigo">
+var queso = 10;
+                        </pre>
+                    </div>
                 </div>
             </div>
             <div class="col-12 tarjeta show-info" id="show-info2"></div>
