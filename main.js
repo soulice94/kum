@@ -36,4 +36,8 @@ $(document).ready(function(){
         }
         toggleView = !toggleView;
     });
+    $("button.close").click(function(){
+        showInfo.slideToggle(300);
+    });
+
 });

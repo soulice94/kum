@@ -5,13 +5,6 @@ h1.nombre{
     color: #673AB7;
     font-size: 4rem;
 }
-div.flechas{
-    background: orange;
-    border-top: 300px solid transparent;
-    /*border-bottom: 60px solid transparent;*/
-    border-left: 60px solid yellow;
-    border-right: 60px solid purple;
-}
 div.etiqueta{
     position: relative;
 }
@@ -61,8 +54,7 @@ div.habilidades{
 }
 .show-info{
     display: none;
-    height: 400px;
-    background: white;
+    background: #EEEEEE;
     width: 100%;
     margin-bottom: 30px;
 }
