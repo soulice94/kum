@@ -15,30 +15,18 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="container-fluid encabezado">
+
+    <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-sm-8" id="nombre">
-                <h1 class="nombre text-center">Pedro Arturo</h1>
-                <h1 class="nombre text-center">Flores Ramírez</h1>
+            <div class="col-sm-12 encabezado" id="nombre">
+                <video autoplay muted loop id="myVideo" class="d-none d-sm-block">
+                    <source src="background.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
     </div>
     <div class="container-fluid acerca">
-        <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center">
             <div class="col-12">
                 <h2 class="titulo mt-4 ml-4 mb-4">Acerca de Mi</h2>
             </div>
@@ -48,7 +36,7 @@
                     <div class="borde_der"></div>
                 </div>
                 <div style="clear: left;"></div> -->
-            <div class="col-md-3">
+            <div class="col-6 col-md-3">
                 <img class="img-fluid mb-5 rounded-circle" src="img/user.jpeg">
             </div>
             <div class="col-md-6">
@@ -68,36 +56,66 @@
             <div class="col-12">
                 <h2 class="titulo text-center mt-4" style="color:black">Habilidades</h2>
             </div>
-            <div class="col-6 col-sm-3 col-md-2" id="t1">
+            <div class="col-6 col-sm-3 col-md-1" id="t1">
                 <div class="tarjeta">
                     <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-3 col-md-2">
+            <div class="col-6 col-sm-3 col-md-1">
                 <div class="tarjeta">
                     <img src="img/technologies/LaravelLogo.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-3 col-md-2">
+            <div class="col-6 col-sm-3 col-md-1">
                 <div class="tarjeta">
                     <img src="img/technologies/bootstrap.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-3 col-md-2">
+            <div class="col-6 col-sm-3 col-md-1">
                 <div class="tarjeta">
                     <img src="img/technologies/node.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-3 col-md-2">
+            <div class="col-6 col-sm-3 col-md-1">
                 <div class="tarjeta">
                     <img src="img/technologies/php.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-            <div class="col-6 col-sm-3 col-md-2">
+            <div class="col-6 col-sm-3 col-md-1">
                 <div class="tarjeta">
                     <img src="img/technologies/jquery.gif" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
+            <div class="col-6 col-sm-3 col-md-1" id="t1">
+                    <div class="tarjeta">
+                        <img src="img/technologies/angular.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-1">
+                    <div class="tarjeta">
+                        <img src="img/technologies/LaravelLogo.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-1">
+                    <div class="tarjeta">
+                        <img src="img/technologies/bootstrap.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-1">
+                    <div class="tarjeta">
+                        <img src="img/technologies/node.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-1">
+                    <div class="tarjeta">
+                        <img src="img/technologies/php.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-1">
+                    <div class="tarjeta">
+                        <img src="img/technologies/jquery.gif" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
             <div class="col-12 show-info" id="show-info1">
                 <div class="row justify-content-between mt-3">
                     <div class="col-4">
@@ -110,10 +128,10 @@
                     </div>
                 </div>
                 <div class="row mb-4">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <p id="descripcion"></p>
                     </div>
-                    <div class="col-sm-6 bg-black">
+                    <div class="col-md-6 bg-black">
                         <pre class="prettyprint linenums pt-3" id="codigo"></pre>
                     </div>
                 </div>

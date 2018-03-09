@@ -31,13 +31,15 @@ $(document).ready(function(){
         showInfo.slideToggle(300);
         if(toggleView){
             $('html, body').stop().animate({
-                scrollTop: t1.offset().top
+                scrollTop: showInfo.offset().top
             }, 300);
         }
         toggleView = !toggleView;
     });
+
     $("button.close").click(function(){
         showInfo.slideToggle(300);
+        toggleView = !toggleView;
     });
 
 });
