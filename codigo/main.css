@@ -1,9 +1,27 @@
 body{
     background: white;
 }
-h1.nombre{
-    color: #673AB7;
+div.centro-ver-hor{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+div.nombre{
+    background: #673AB7;
+    color: white;
     font-size: 4rem;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+h3.profesion{
+    background: white;
+    color: #673AB7;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
 }
 div.etiqueta{
     position: relative;
@@ -72,4 +90,6 @@ div.bg-black{
 #myVideo {
     height: 100vh; 
     width: 100%;
+    position: absolute;
+    left: 0;
 }
