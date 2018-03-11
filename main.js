@@ -4,8 +4,7 @@ $(document).ready(function(){
     var t1 = $("#t1");
     var toggleView = true;
 
-    var muchoTexto = `
-        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+    var muchoTexto = `Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
         cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
         galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 
@@ -42,4 +41,13 @@ $(document).ready(function(){
         toggleView = !toggleView;
     });
 
+    $('div.parallax-window').parallax({
+        imageSrc: 'img/keyboard.jpg',
+        zIndex: 100,
+        androidFix: false
+    });
+
+    if(screen.width>=1200)
+        $("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
+    //alert(screen.width);
 });

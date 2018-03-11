@@ -7,6 +7,7 @@ div.centro-ver-hor{
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    z-index: 1;
 }
 div.nombre{
     background: #673AB7;
@@ -52,7 +53,8 @@ hr{
     height: 3px;
 }
 .encabezado{
-    background: #CDCBCB;
+    background-image: url("img/keyboard.jpg");
+    background-color: #CDCBCB;
     height: 100vh;
 }
 div.acerca{
@@ -92,4 +94,11 @@ div.bg-black{
     width: 100%;
     position: absolute;
     left: 0;
+    z-index: 0;
+}
+.parallax-window {
+    height: 100vh;
+    min-width: 100%;
+    background: transparent;
+    width: 100%;
 }
