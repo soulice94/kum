@@ -47,7 +47,7 @@ $(document).ready(function(){
     });
 
     if(screen.width>=1200){
-        //$("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
+        $("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
     }
     //alert(screen.width);
 });

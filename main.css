@@ -10,17 +10,17 @@ div.centro-ver-hor{
     z-index: 1;
 }
 div.nombre{
-    background: #673AB7;
+    /*background: #673AB7;*/
     color: white;
     font-size: 4rem;
-    padding: 15px;
     width: 100%;
     text-align: center;
+    padding: 10px;
 }
 h3.profesion{
-    background: white;
-    color: #673AB7;
-    padding: 10px;
+    /*background: white;
+    color: #673AB7;*/
+    color: white;
     width: 100%;
     text-align: center;
 }
@@ -53,14 +53,16 @@ hr{
     height: 3px;
 }
 .encabezado{
-    background-image: url('img/keyboard.jpg');
+    background-image: url('img/background.jpg');
     background-attachment: fixed;
-    background-position: 50% 50%;
+    background-position: center center;
     background-size: auto;
+    background-repeat: no-repeat;
+    background-color: black;
     height: 100vh;
 }
 div.acerca{
-    background: #513F78;
+    background: #424242;
     color: white;
 }
 div.tarjeta{
@@ -111,4 +113,5 @@ div.mascara{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 }
