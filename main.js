@@ -43,11 +43,11 @@ $(document).ready(function(){
 
     $('div.parallax-window').parallax({
         imageSrc: 'img/keyboard.jpg',
-        zIndex: 100,
-        androidFix: false
+        zIndex: 100
     });
 
-    if(screen.width>=1200)
-        $("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
+    if(screen.width>=1200){
+        //$("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
+    }
     //alert(screen.width);
 });
