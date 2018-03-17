@@ -55,7 +55,7 @@ hr{
 .encabezado{
     background-attachment: fixed;
     background-position: center center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     height: 100vh;
@@ -85,6 +85,7 @@ div.habilidades{
 p{
     font-size: 1.3rem;
     text-align: justify;
+    padding: 10px;
 }
 div.bg-black{
     background: black;
@@ -108,7 +109,7 @@ div.bg-black{
 div.mascara{
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -118,4 +119,8 @@ div.mascara{
     .encabezado{
         background-image: url('img/background.jpg');
     }
+}
+
+.navbar{
+    background-color: transparent;
 }

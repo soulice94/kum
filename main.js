@@ -50,4 +50,16 @@ $(document).ready(function(){
         $("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
     }
     //alert(screen.width);
+
+    function show_like_itunes(){
+        if(screen.width>=1200){
+            
+        }
+        else if(screen.width>=576){
+            
+        }
+        else{
+            
+        }
+    }
 });
