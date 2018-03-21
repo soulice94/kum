@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    var showInfo = $("#show-info1");
     var t1 = $("#t1");
     var toggleView = true;
+    var div_abierta = null;
 
     var muchoTexto = `Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
         Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
@@ -14,18 +14,34 @@ $(document).ready(function(){
         Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
     `;
 
-    var codigo = `class Voila {
+    var inner_codigo = `class Voila {
     public:
     // Voila
     static const string VOILA = "Voila";
     
     // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
+    // will not interfere with embedded <a href="#voila2">tags</a>.
 } 
     `;
 
     $("div.tarjeta").click(function(){
-        $("#descripcion").text(muchoTexto);
-        $("#codigo").text(codigo).removeClass("prettyprinted");
+        //el this aquí significa get(div)
+        //console.log(this.id);
+        var descripcion = $("#descripcion-lg");
+        var showInfo    = $("#show-info-lg");
+        var codigo      = $("#codigo-lg");
+        div_abierta = showInfo;
+        descripcion.text(muchoTexto);
+        codigo.text(inner_codigo).removeClass("prettyprinted");
         PR.prettyPrint();
         showInfo.slideToggle(300);
         if(toggleView){
@@ -37,7 +53,7 @@ $(document).ready(function(){
     });
 
     $("button.close").click(function(){
-        showInfo.slideToggle(300);
+        div_abierta.slideToggle(300);
         toggleView = !toggleView;
     });
 

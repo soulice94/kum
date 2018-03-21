@@ -88,6 +88,9 @@ p{
     text-align: justify;
     padding: 10px;
 }
+p.acerca_de{
+    font-weight: 200;
+}
 div.bg-black{
     background: black;
 }
@@ -120,6 +123,14 @@ div.mascara{
     top: 0;
     left: 0;
     z-index: 1;
+}
+pre{
+    font-size: 1.0rem;
+}
+div.footer{
+    height: 50vh;
+    color: white;
+    background: black;
 }
 @media only screen and (max-width: 1200px){
     .encabezado{
