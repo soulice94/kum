@@ -39,43 +39,38 @@ $(document).ready(function(){
         var descripcion = $("#descripcion-lg");
         var showInfo    = $("#show-info-lg");
         var codigo      = $("#codigo-lg");
+        if(screen.width<576){
+            showInfo    = $("#show-info-xs");
+            codigo      = $("#codigo-xs");
+            descripcion = $("#descripcion-xs");
+        }
+        if(screen.width>=576 && screen.width<=768){
+            showInfo    = $("#show-info-sm");
+            codigo      = $("#codigo-sm");
+            descripcion = $("#descripcion-sm");
+        }
         div_abierta = showInfo;
         descripcion.text(muchoTexto);
         codigo.text(inner_codigo).removeClass("prettyprinted");
         PR.prettyPrint();
-        showInfo.slideToggle(300);
+        showInfo.slideToggle(500);
         if(toggleView){
             $('html, body').stop().animate({
                 scrollTop: showInfo.offset().top
-            }, 300);
+            }, 500);
         }
         toggleView = !toggleView;
     });
 
     $("button.close").click(function(){
-        div_abierta.slideToggle(300);
+        div_abierta.slideToggle(500);
+        $('html, body').stop().animate({
+            scrollTop: $("#tarjeta1").offset().top
+        }, 500);
         toggleView = !toggleView;
     });
 
-    $('div.parallax-window').parallax({
-        imageSrc: 'img/keyboard.jpg',
-        zIndex: 100
-    });
-
-    if(screen.width>=1200){
-        $("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
-    }
-    //alert(screen.width);
-
-    function show_like_itunes(){
-        if(screen.width>=1200){
-            
-        }
-        else if(screen.width>=576){
-            
-        }
-        else{
-            
-        }
-    }
+    // if(screen.width>=1200){
+    //     $("#nombre").append('<video autoplay muted loop id="myVideo" class="d-none d-xl-block"><source src="background.mp4" type="video/mp4"></video>');
+    // }
 });
