@@ -44,10 +44,15 @@ $(document).ready(function(){
             codigo      = $("#codigo-xs");
             descripcion = $("#descripcion-xs");
         }
-        if(screen.width>=576 && screen.width<=768){
+        if(screen.width>=576 && screen.width<768){
             showInfo    = $("#show-info-sm");
             codigo      = $("#codigo-sm");
             descripcion = $("#descripcion-sm");
+        }
+        if(screen.width>=768 && screen.width<992){
+            showInfo    = $("#show-info-md");
+            codigo      = $("#codigo-md");
+            descripcion = $("#descripcion-md");
         }
         div_abierta = showInfo;
         descripcion.text(muchoTexto);
